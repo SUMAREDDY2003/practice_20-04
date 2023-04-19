@@ -1,0 +1,110 @@
+1
+12
+123
+1234
+12345
+
+i=1
+j=1
+n=int(input("enter no.of rows:"))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end="")
+    print()
+    
+1
+22
+333
+4444
+55555
+
+i=1
+j=1
+n=int(input("enter no.of rows:"))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(i,end="")
+    print()
+    
+#palindrome program - the actual string is equal to its reverse
+
+num=int(input("enter the number:"))
+rev=0
+temp=num
+while num>0:
+    rem=num%10;
+    rev=rev*10+rem;
+    num=num//10;
+if temp==rev:
+    print("palindrome")
+else:
+    print("not-palindrome")
+    
+#Armstrong:- number is equal to its sum of cubes of its digits
+num=int(input("enter the number:"))
+arm=0
+temp=num
+while num>0:
+    digit=num%10;
+    arm=digit**3+arm;
+    num=num//10;
+if temp==arm:
+    print("armstrong")
+else:
+    print("not-armstrong")
+
+#Area of traingle,square,rectangle
+a=eval("enter the value1:")
+b=eval("enter the value2:")
+print("Area of traingle is :",0.5*a*b)
+print("Area of  square is:",a*a)
+print("Area of rectangle is:",a*b)
+
+#swapping of numbers of 2 numbers
+a=int(input("enter the num1:"))
+b=int(input("enter the num2:"))
+a,b=b,a
+print("value of a is :",a)
+print("value of b is :",b)
+#for 3 numbers
+a=int(input("enter the num1:"))
+b=int(input("enter the num2:"))
+c=int(input("enter the num3:"))
+a,b,c=c,b,a
+print("value of a is :",a)
+print("value of b is :",b)
+print("value of c is :",c)
+
+#swapping of numbers of numbers in ascending order ie. 5,2,4 ->2,4,5
+a=int(input("enter the num1:"))
+b=int(input("enter the num2:"))
+c=int(input("enter the num3:"))
+if a>b and a>c:
+  if b<c:
+     temp=a
+     a=
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+#fibonacci series
+n=int(input("Enter the n value upto you want to display:"))
+a=0
+b=1
+print(a)
+print(b)
+for i in range(n-2):
+    c=a+b
+    print(c)
+    a=b
+    b=c
